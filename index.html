@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  
+  <!-- Google Font: Montserrat (Optional for better styling) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Simple | Login Form</title>
+
+  <!-- Optional: Tailwind Custom Font Setup -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="font-montserrat h-screen w-full flex items-center justify-center bg-blue-500">
+
+  <main>
+    <section class="flex justify-center items-center gap-20">
+      
+      <!-- Left Heading -->
+      <h1 class="text-white font-bold text-6xl leading-snug">
+        Beautiful <br> Login Form in <br> HTML & TAILWIND
+      </h1>
+
+      <!-- Login Form -->
+      <form class="bg-white flex flex-col items-center justify-center rounded w-[28rem] px-8 shadow-lg" action="#">
+
+        <h1 class="font-semibold text-2xl py-8">Log in with</h1>
+
+        <!-- Social Buttons -->
+        <div class="flex gap-5">
+          <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
+            Google
+            <i class="fa-brands fa-google text-2xl absolute left-6 top-2 text-blue-900"></i>
+          </button>
+          <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
+            Apple
+            <i class="fa-brands fa-apple text-2xl absolute left-6 top-2 text-black"></i>
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="my-6 flex items-center justify-center w-full">
+          <div class="bg-gray-300 h-[1px] w-full"></div>
+          <span class="px-4 text-gray-500">or</span>
+          <div class="bg-gray-300 h-[1px] w-full"></div>
+        </div>
+
+        <!-- Email Input -->
+        <div class="flex flex-col gap-2 w-80">
+          <label for="email" class="text-gray-700">Email</label>
+          <input class="border rounded border-gray-200 bg-gray-100 py-3 px-4" type="email" id="email" required placeholder="Enter email address" />
+        </div>
+
+        <!-- Password Row -->
+        <div class="flex justify-between w-80 mt-4">
+          <span class="text-gray-700">Password</span>
+          <span class="text-blue-600 cursor-pointer hover:underline text-sm">Forgot Password?</span>
+        </div>
+
+        <!-- Password Input with Toggle -->
+        <div class="flex flex-col w-80 relative mt-2">  
+          <input class="border rounded border-gray-200 bg-gray-100 py-3 px-4 pr-12" type="password" id="password" required placeholder="Enter your password" />
+          <span class="absolute right-4 top-3 text-gray-600 cursor-pointer" onclick="togglePassword()">
+            <i id="eyeIcon" class="fas fa-eye"></i>
+          </span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="w-80">
+          <button class="w-full py-3 my-7 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+            LOG IN
+          </button>
+        </div>
+
+        <!-- Sign Up -->
+        <div class="pb-8">
+          <p class="font-medium text-sm">Don't have an account? 
+            <span class="text-blue-600 cursor-pointer hover:text-blue-400">Signup</span>
+          </p>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
