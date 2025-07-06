@@ -10,34 +10,28 @@
   <!-- Google Font: Montserrat (Optional for better styling) -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/style.css">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Simple | Login Form</title>
 
-  <!-- Optional: Tailwind Custom Font Setup -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            montserrat: ['Montserrat', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
 </head>
-<body class="font-montserrat h-screen w-full flex items-center justify-center bg-blue-500">
+<body class=" h-screen w-full bg-blue-500 flex flex-col items-center justify-center">
 
   <main>
-    <section class="flex justify-center items-center gap-20">
+    <section>
       
       <!-- Left Heading -->
-      <h1 class="text-white font-bold text-6xl leading-snug">
-        Beautiful <br> Login Form in <br> HTML & TAILWIND
-      </h1>
+
+      <div class="text-form">
+           <h1 class="text-white font-bold text-6xl leading-snug">
+                 Beautiful <br> Login Form in <br> HTML & TAILWIND
+          </h1>
+      </div>
+      
 
       <!-- Login Form -->
       <form class="bg-white flex flex-col items-center justify-center rounded w-[28rem] px-8 shadow-lg" action="#">
@@ -46,14 +40,14 @@
 
         <!-- Social Buttons -->
         <div class="flex gap-5">
-          <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
-            Google
-            <i class="fa-brands fa-google text-2xl absolute left-6 top-2 text-blue-900"></i>
-          </button>
-          <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
-            Apple
-            <i class="fa-brands fa-apple text-2xl absolute left-6 top-2 text-black"></i>
-          </button>
+              <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
+                  Google
+                  <i class="fa-brands fa-google text-2xl absolute left-6 top-2 text-blue-900"></i>
+              </button>
+              <button class="relative text-base font-medium bg-gray-200 border border-gray-300 pl-16 pr-8 py-3 rounded">
+                  Apple
+                  <i class="fa-brands fa-apple text-2xl absolute left-6 top-2 text-black"></i>
+              </button>
         </div>
 
         <!-- Divider -->
