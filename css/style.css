@@ -3,4 +3,72 @@
 
     font-family: "Montserrat", sans-serif;
  }
+
+ @media (min-width: 320px) and (max-width: 600px) {
+
+    .text-form h1 {
+
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding-top: 15rem;
+        text-align: center;
+      
+    }
+
+    section {
+
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+       padding: 2rem;
+
+    }
+
+ }
+ 
+ @media (min-width: 601px) and (max-width: 1024px) {
+   
+
+    section {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 2rem 0rem;
+      gap: 2rem;
+
+    }
+
+    .text-form h1 {
+
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding-top: 10rem;
+      text-align: center;
+
+    }
+
+ }
+
+ @media (min-width: 1025px) {
+   
+   body {
+
+       padding: 5rem;
+   }
+
+     section {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9rem;
+     }
+ }
+
+   
+ 
+
  
